@@ -1,12 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
-  <!-- Leaf/Sprout Icon - Two rounded tear-drop shapes -->
-  <g transform="translate(50, 20)">
+  <!-- Leaf/Sprout Icon - Two rounded tear-drop shapes above -->
+  <g transform="translate(50, 18)">
     <!-- Left leaf -->
-    <path d="M-6 -4 Q-6 -6 -4 -6 Q-2 -6 -1 -4 Q0 -2 0 0 Q0 2 0 4 Q0 6 2 6 Q4 6 4 4 Q4 2 3 0 Q4 -2 4 -4 Q4 -6 2 -6 Q0 -6 -2 -4 Q-3 -2 -4 0 Q-4 2 -4 4 Q-4 6 -2 6 Q0 6 0 4 Q0 2 -1 0 Q-2 -2 -2 -4 Q-2 -6 -4 -6 Q-6 -6 -6 -4 Z" fill="#C8102E"/>
+    <path d="M-5 -3 Q-5 -5 -3 -5 Q-1 -5 0 -3 Q1 -1 1 1 Q1 3 0 3 Q-1 3 -1 1 Q-1 -1 -2 -2 Q-3 -3 -4 -3 Q-5 -3 -5 -1 Q-5 1 -4 1 Q-3 1 -3 -1 Q-3 -3 -4 -3 Q-5 -3 -5 -1" fill="#1A1A1A"/>
     <!-- Right leaf -->
-    <path d="M2 -4 Q2 -6 4 -6 Q6 -6 7 -4 Q8 -2 8 0 Q8 2 8 4 Q8 6 6 6 Q4 6 4 4 Q4 2 5 0 Q4 -2 4 -4 Q4 -6 6 -6 Q8 -6 8 -4 Q8 -2 7 0 Q6 2 6 4 Q6 6 4 6 Q2 6 2 4 Q2 2 3 0 Q2 -2 2 -4 Z" fill="#C8102E"/>
+    <path d="M1 -3 Q1 -5 3 -5 Q5 -5 6 -3 Q7 -1 7 1 Q7 3 6 3 Q5 3 5 1 Q5 -1 4 -2 Q3 -3 2 -3 Q1 -3 1 -1 Q1 1 2 1 Q3 1 3 -1 Q3 -3 2 -3 Q1 -3 1 -1" fill="#1A1A1A"/>
   </g>
-  <!-- 100% FRESH Text -->
-  <text x="50" y="50" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700" fill="#1A1A1A" text-anchor="middle" letter-spacing="0.5px">100%</text>
-  <text x="50" y="70" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A" text-anchor="middle" letter-spacing="1.2px">FRESH</text>
+  
+  <!-- 100% Text - Bold, rounded sans-serif -->
+  <text x="50" y="48" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#1A1A1A" text-anchor="middle" letter-spacing="0.5px">100%</text>
+  
+  <!-- FRESH Text - Smaller, bold -->
+  <text x="50" y="68" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#1A1A1A" text-anchor="middle" letter-spacing="1.5px">FRESH</text>
 </svg>
