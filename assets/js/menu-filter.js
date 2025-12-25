@@ -10,6 +10,7 @@ class MenuFilter {
     this.categoryBtns = document.querySelectorAll('[data-category-filter]');
     this.tagBtns = document.querySelectorAll('[data-tag-filter]');
     this.menuCards = document.querySelectorAll('.menu-card');
+    this.categorySections = document.querySelectorAll('.menu-category-section');
     
     this.currentCategory = 'all';
     this.currentTag = null;
@@ -63,7 +64,9 @@ class MenuFilter {
   
   filterMenu() {
     let visibleCount = 0;
+    const categoryVisibleCount = {};
     
+    // Count visible cards per category
     this.menuCards.forEach(card => {
       const category = card.dataset.category || '';
       const tags = card.dataset.tags || '';
@@ -86,9 +89,36 @@ class MenuFilter {
         card.style.display = '';
         card.classList.remove('hidden');
         visibleCount++;
+        
+        // Count visible cards per category
+        if (!categoryVisibleCount[category]) {
+          categoryVisibleCount[category] = 0;
+        }
+        categoryVisibleCount[category]++;
       } else {
         card.style.display = 'none';
         card.classList.add('hidden');
+      }
+    });
+    
+    // Show/Hide category sections based on visible cards
+    this.categorySections.forEach(section => {
+      const sectionCategory = section.dataset.category || '';
+      const hasVisibleCards = categoryVisibleCount[sectionCategory] > 0;
+      
+      if (hasVisibleCards || this.currentCategory === 'all') {
+        // Show section if it has visible cards OR if showing all categories
+        // But only show if there are actually visible cards in that category
+        if (hasVisibleCards) {
+          section.style.display = '';
+          section.classList.remove('hidden');
+        } else {
+          section.style.display = 'none';
+          section.classList.add('hidden');
+        }
+      } else {
+        section.style.display = 'none';
+        section.classList.add('hidden');
       }
     });
     
