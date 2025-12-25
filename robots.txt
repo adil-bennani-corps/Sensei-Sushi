@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://senseisushi.be/sitemap.xml
+
+# Disallow
+Disallow: /assets/js/
+Disallow: /*.json$
+

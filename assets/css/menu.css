@@ -1,0 +1,157 @@
+/* ========================================
+   MENU PAGE - SENSEI SUSHI
+   ======================================== */
+
+.menu-filters {
+  background-color: var(--color-white);
+  padding: var(--spacing-6) 0;
+  border-bottom: 1px solid var(--color-gray-200);
+  position: sticky;
+  top: 80px;
+  z-index: var(--z-sticky);
+}
+
+.menu-search {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto var(--spacing-6);
+}
+
+.menu-search__input {
+  width: 100%;
+  padding: var(--spacing-3) var(--spacing-4) var(--spacing-3) 48px;
+  font-size: var(--text-base);
+  border: 2px solid var(--color-gray-200);
+  border-radius: var(--rounded-lg);
+  transition: border-color var(--transition-fast);
+}
+
+.menu-search__input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.menu-search__icon {
+  position: absolute;
+  left: var(--spacing-4);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: var(--color-gray-400);
+  pointer-events: none;
+}
+
+.menu-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+  justify-content: center;
+}
+
+.menu-category-btn {
+  padding: var(--spacing-2) var(--spacing-4);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-gray-700);
+  background-color: var(--color-gray-100);
+  border: 2px solid transparent;
+  border-radius: var(--rounded-full);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.menu-category-btn:hover {
+  background-color: var(--color-gray-200);
+  color: var(--color-black);
+}
+
+.menu-category-btn.active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+}
+
+.menu-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+  justify-content: center;
+  margin-top: var(--spacing-4);
+}
+
+.menu-tag-btn {
+  padding: var(--spacing-2) var(--spacing-4);
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  color: var(--color-gray-700);
+  background-color: transparent;
+  border: 2px solid var(--color-gray-300);
+  border-radius: var(--rounded-full);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.menu-tag-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.menu-tag-btn.active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-6);
+  padding: var(--spacing-8) 0;
+}
+
+.menu-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: var(--spacing-16) var(--spacing-4);
+}
+
+.menu-empty__content {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.menu-empty__content svg {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--spacing-4);
+  color: var(--color-gray-400);
+}
+
+.menu-empty__content h3 {
+  font-size: var(--text-xl);
+  color: var(--color-gray-700);
+  margin-bottom: var(--spacing-2);
+}
+
+.menu-empty__content p {
+  color: var(--color-gray-600);
+  font-size: var(--text-sm);
+}
+
+/* Category Section */
+.menu-category-section {
+  margin-bottom: var(--spacing-12);
+}
+
+.menu-category-section__title {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  color: var(--color-black);
+  margin-bottom: var(--spacing-6);
+  padding-bottom: var(--spacing-2);
+  border-bottom: 2px solid var(--color-gray-200);
+}
+

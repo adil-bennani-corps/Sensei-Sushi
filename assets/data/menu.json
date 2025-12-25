@@ -1,0 +1,62 @@
+{
+  "entrees": [
+    {"id": 1, "name": "Karaage", "description": "Beignets de poulet frit à la japonaise", "price": "7,40€", "pieces": "5 pcs"},
+    {"id": "2A", "name": "Tempura crevette", "description": "Crevettes en tempura croustillante", "price": "7,40€", "pieces": "4 pcs"},
+    {"id": "2B", "name": "Dynamite crevette", "description": "Crevettes dynamite épicées", "price": "7,90€", "pieces": "4 pcs"},
+    {"id": 3, "name": "Salade de choux", "description": "Salade de choux fraîche", "price": "3,50€"},
+    {"id": 4, "name": "Salade d'algues wakame", "description": "Algues wakame assaisonnées", "price": "3,90€"},
+    {"id": 5, "name": "Edamame", "description": "Fèves de soja immatures", "price": "3,90€"},
+    {"id": "5A", "name": "Edamame épicé", "description": "Edamame avec épices", "price": "4,20€"},
+    {"id": 6, "name": "Soupe miso", "description": "Soupe japonaise traditionnelle", "price": "5,50€"},
+    {"id": 7, "name": "Soupe spicy", "description": "Soupe épicée", "price": "5,90€"}
+  ],
+  "signature": [
+    {"id": 51, "name": "Pink Lady", "description": "Poulet, sauce spicy, concombre, mangue, mayo et pignon de pin", "price": "9,90€", "pieces": "8 pcs", "tags": ["popular"]},
+    {"id": 52, "name": "Kyoto", "description": "Crevette tempura, cheese, saumon snacké, sauce spicy, sauce unagi, jeune oignon", "price": "9,90€", "pieces": "8 pcs", "tags": ["popular"]},
+    {"id": 53, "name": "Kyoto 2", "description": "Saumon snacké, thon marinade, concombre, sauce spicy, unagi et ciboulette", "price": "9,90€", "pieces": "8 pcs", "tags": ["new"]},
+    {"id": 54, "name": "Black Panther", "description": "Tartare de saumon crème, concombre, sauce cocktail et jeune oignon", "price": "9,90€", "pieces": "8 pcs", "tags": ["popular"]},
+    {"id": 55, "name": "Dragon Rolls", "description": "Crevette tempura, surimi, avocat et sauce cocktail", "price": "9,90€", "pieces": "8 pcs", "tags": ["popular"]},
+    {"id": 56, "name": "Romantique", "description": "Saumon, cheese, concombre, thon et avocat", "price": "9,90€", "pieces": "8 pcs"},
+    {"id": 57, "name": "Panda", "description": "Tempura thon cuit, concombre, oignon frit, sauce spicy et sauce unagi", "price": "9,90€", "pieces": "8 pcs"},
+    {"id": "58B", "name": "I Spicy Sensei", "description": "Crevette tempura, avocat, surimi, piment japonais, jalapeño spicy", "price": "9,90€", "pieces": "8 pcs", "tags": ["spicy"]},
+    {"id": 59, "name": "Pokémon", "description": "Saumon, cheese, concombre, avocat, spicy, unagi et ciboulette", "price": "9,90€", "pieces": "8 pcs"},
+    {"id": 60, "name": "Dynamique", "description": "Crevette tempura, spicy, concombre, cheese, saumon et avocat", "price": "9,90€", "pieces": "8 pcs"},
+    {"id": 61, "name": "Veggie Pogo", "description": "Cheese, concombre, carotte, avocat et mangue", "price": "8,90€", "pieces": "8 pcs", "tags": ["veggie"]},
+    {"id": 62, "name": "Naruto", "description": "Crevette, concombre, avocat, sauce spicy, mangue, mayo et piment japonais", "price": "9,90€", "pieces": "8 pcs"},
+    {"id": 63, "name": "Yumroll", "description": "Poulet katsu, concombre, sauce cocktail, piment japonais et jalapeño vert", "price": "9,90€", "pieces": "8 pcs"},
+    {"id": 64, "name": "Katsu Crazy", "description": "Poulet katsu, cheese, mangue, concombre et oignon frit", "price": "9,90€", "pieces": "8 pcs"},
+    {"id": 65, "name": "Norwegian", "description": "Crevette, saumon fumé, concombre, cheese, sésame mixte, spicy unagi, jalapeños", "price": "9,90€", "pieces": "8 pcs"},
+    {"id": "65B", "name": "Salmon Crazy", "description": "Crevette, avocat, oignon frit, sésame, mariné façon du chef, sauce spicy unagi", "price": "11,50€", "pieces": "8 pcs", "tags": ["new"]},
+    {"id": "66B", "name": "Yellow Rolls", "description": "Poulet katsu, concombre, sauce mayo, massago", "price": "10,90€", "pieces": "8 pcs", "tags": ["new"]},
+    {"id": "67B", "name": "Dorito Rolls", "description": "Poulet, cheese, concombre, sauce mayo, chips doritos", "price": "10,90€", "pieces": "8 pcs", "tags": ["new"]},
+    {"id": 68, "name": "Cowboy", "description": "Beef mariné, salade laitue, avocat, jalapeños haché, sauce césar", "price": "9,90€", "pieces": "8 pcs"},
+    {"id": 69, "name": "Dragon Eyes", "description": "Crevette tempura, cheese, avocat, mixte crabe surimi, sauce chef, œuf de saumon", "price": "9,90€", "pieces": "8 pcs"},
+    {"id": 70, "name": "Volcano Rolls", "description": "Crevette tempura, salade, poivron grillé, cheese, beurre cacahuète, hot spicy", "price": "10,90€", "pieces": "8 pcs", "tags": ["new", "spicy"]},
+    {"id": 71, "name": "Tokyo", "description": "Crevette scampi, mangue, coriandre, ciboulette, piment, sauce cocktail", "price": "11,50€", "pieces": "8 pcs", "tags": ["new"]},
+    {"id": 72, "name": "Sweet Romeo", "description": "Tempura crevette surimi, cheese, ciboulette, piment japonais", "price": "9,50€", "pieces": "8 pcs"},
+    {"id": "72A", "name": "Tuna Spicy", "description": "Tuna mariné façon du chef, crevette, concombre, sésame mixte, massago, unagi", "price": "11,90€", "pieces": "8 pcs", "tags": ["new", "spicy"]}
+  ],
+  "california": [
+    {"id": 23, "name": "Saumon avocat ciboulette", "description": "Saumon, avocat et ciboulette", "price": "8,20€", "pieces": "8 pcs"},
+    {"id": "23A", "name": "Poulet crème", "description": "Concombre, oignon frit, sauce chili-mayo", "price": "8,50€", "pieces": "8 pcs"},
+    {"id": "23B", "name": "Poulet cheese avocat", "description": "Panko pané, sauce curry", "price": "8,90€", "pieces": "8 pcs"},
+    {"id": "33A", "name": "Poulet panko cheese", "description": "Concombre, panko pané, sauce curry", "price": "8,90€", "pieces": "8 pcs"},
+    {"id": 27, "name": "Saumon fumé crevette", "description": "Concombre, ciboulette, panko pané", "price": "9,20€", "pieces": "8 pcs"},
+    {"id": 34, "name": "Poulet mangue", "description": "Sauce katsu, oignon frit", "price": "8,90€", "pieces": "8 pcs", "tags": ["new"]},
+    {"id": 35, "name": "Thon cuit cheese", "description": "Avocat, panko pané, spicy unagi", "price": "8,90€", "pieces": "8 pcs"},
+    {"id": 36, "name": "Crevette tempura cheese", "description": "Mangue, sauce spicy, oignon frit", "price": "8,90€", "pieces": "8 pcs", "tags": ["new"]}
+  ],
+  "plateaux": [
+    {"id": "saumon-lover", "name": "Saumon Lover", "description": "6 sushis saumon, 8 cali saumon avocat, 8 saumons rolls cheese", "price": "27,90€", "pieces": "22 pcs"},
+    {"id": "calimix", "name": "Calimix", "description": "8 saumons avocat, 8 saumons cheese avocat avec ciboulette, 8 springs saumons avocat avec menthe coriandre, 8 saumons rolls", "price": "29,90€", "pieces": "32 pcs"},
+    {"id": "sushimix", "name": "Sushimix", "description": "2 saumons, 2 thons, 1 crevette, 1 saumon fumé, 1 tartare de saumon, 1 saumon snacké, 1 œuf de saumon, 1 surimi", "price": "27,90€", "pieces": "10 pcs"},
+    {"id": "mix-classic", "name": "Mix Classic", "description": "6 makis saumons, 8 thon cuit panko pané, 8 spring saumons avocat, 6 maki concombre", "price": "27,90€", "pieces": "28 pcs"},
+    {"id": "veggie", "name": "Veggie", "description": "6 maki avocat, 6 maki concombre, 2 nigiri avocat, 8 veggie pogo", "price": "22,90€", "pieces": "22 pcs", "tags": ["veggie"]},
+    {"id": "classe-vip", "name": "Classe VIP", "description": "2 sushis saumon, 2 sushis thon, 4 sashimis saumon, 8 saumons avocat", "price": "26,50€", "pieces": "16 pcs"},
+    {"id": "sushi-classic", "name": "Sushi Classic", "description": "5 saumons, 5 thons", "price": "31,90€", "pieces": "10 pcs"},
+    {"id": "nogoto", "name": "Nogoto", "description": "8 Kyoto, 8 Dynamique, 8 Pink Lady, 8 Black Panther", "price": "36,90€", "pieces": "32 pcs"},
+    {"id": "sensei-luxe", "name": "Sensei Luxe", "description": "8 Pink Lady, 8 Kyoto, 8 Black Panther, 8 Dragon Rolls, 8 sushis saumon, 8 saumon rolls cheese, 6 gyoza scampis", "price": "76,90€", "pieces": "54 pcs"},
+    {"id": "iceberg", "name": "L'Iceberg", "description": "4 sushi balls, 8 volcano rolls, 8 Black Panther, 8 Kyoto 2, 8 nigiri saumon, 2 nigiri scampi, 2 nigiri thon, 8 Kyoto, 8 Pink Lady", "price": "99,90€", "pieces": "56 pcs"}
+  ]
+}
+

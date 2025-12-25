@@ -1,0 +1,79 @@
+/* ========================================
+   RESPONSIVE - SENSEI SUSHI
+   ======================================== */
+
+/* Mobile First Approach */
+
+/* Extra Small (< 480px) */
+@media (max-width: 479px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .container {
+    padding: 0 var(--spacing-4);
+  }
+  
+  .section {
+    padding: var(--spacing-12) 0;
+  }
+  
+  .section-title {
+    font-size: var(--text-3xl);
+  }
+}
+
+/* Small (480px - 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .grid--4,
+  .grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large (1024px+) */
+@media (min-width: 1024px) {
+  /* Already handled in other files */
+}
+
+/* Extra Large (1280px+) */
+@media (min-width: 1280px) {
+  .section {
+    padding: var(--spacing-24) 0;
+  }
+}
+
+/* Print */
+@media print {
+  .header,
+  .footer,
+  .nav__toggle,
+  .btn,
+  .hero__scroll {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .section {
+    padding: 1cm 0;
+    page-break-inside: avoid;
+  }
+}
+

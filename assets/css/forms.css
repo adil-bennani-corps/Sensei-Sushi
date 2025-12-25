@@ -1,0 +1,67 @@
+/* ========================================
+   FORMS - SENSEI SUSHI
+   ======================================== */
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form__group {
+  margin-bottom: var(--spacing-6);
+}
+
+.form__label {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--color-black);
+  margin-bottom: var(--spacing-2);
+}
+
+.form__input,
+.form__textarea,
+.form__select {
+  width: 100%;
+  padding: var(--spacing-3) var(--spacing-4);
+  font-size: var(--text-base);
+  font-family: var(--font-body);
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-gray-200);
+  border-radius: var(--rounded-lg);
+  transition: border-color var(--transition-fast);
+}
+
+.form__input:focus,
+.form__textarea:focus,
+.form__select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.form__textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form__error {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-error);
+  margin-top: var(--spacing-1);
+}
+
+.form__success {
+  padding: var(--spacing-4);
+  background-color: var(--color-success);
+  color: var(--color-white);
+  border-radius: var(--rounded-lg);
+  margin-bottom: var(--spacing-6);
+  text-align: center;
+}
+
+.form__submit {
+  width: 100%;
+}
+

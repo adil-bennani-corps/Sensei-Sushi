@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Notre Menu | Sensei Sushi - Restaurant Japonais Bruxelles</title>
+  <meta name="description" content="Découvrez notre menu complet : sushis, makis, california rolls, signature rolls, plateaux et bien plus. Commandez en ligne ou par téléphone.">
+  <link rel="canonical" href="https://senseisushi.be/fr/menu.html">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/typography.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/buttons.css">
+  <link rel="stylesheet" href="/assets/css/cards.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="stylesheet" href="/assets/css/menu.css">
+  <link rel="stylesheet" href="/assets/css/animations.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <link rel="stylesheet" href="/assets/css/utilities.css">
+</head>
+<body>
+  
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="/fr/" class="nav__logo">
+          <img src="/img/logo-senseisushi.png" alt="Sensei Sushi" width="160" height="50">
+        </a>
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item"><a href="/fr/" class="nav__link">Accueil</a></li>
+          <li class="nav__item nav__item--dropdown">
+            <a href="/fr/menu.html" class="nav__link">
+              Notre Menu
+              <svg class="nav__arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 4l4 4 4-4"/>
+              </svg>
+            </a>
+            <ul class="nav__dropdown">
+              <li><a href="/fr/menu/signature-rolls.html">Signature Rolls</a></li>
+              <li><a href="/fr/menu/california-rolls.html">California Rolls</a></li>
+              <li><a href="/fr/menu/plateaux.html">Plateaux</a></li>
+              <li><a href="/fr/menu.html" class="nav__dropdown-all">Voir tout →</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="/fr/restaurants.html" class="nav__link">Nos Restaurants</a></li>
+          <li class="nav__item"><a href="/fr/livraison.html" class="nav__link">Livraison</a></li>
+          <li class="nav__item"><a href="/fr/a-propos.html" class="nav__link">À propos</a></li>
+          <li class="nav__item"><a href="/fr/contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="tel:024252799" class="btn btn--primary btn--sm nav__cta">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>Commander</span>
+          </a>
+          <button class="nav__toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
+            <span class="nav__toggle-line"></span>
+            <span class="nav__toggle-line"></span>
+            <span class="nav__toggle-line"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO MENU -->
+  <section class="hero hero--small">
+    <div class="hero__background">
+      <div style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));"></div>
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="container hero__container">
+      <div class="hero__content" data-animate="fade-up">
+        <nav style="margin-bottom: var(--spacing-4); font-size: var(--text-sm);">
+          <a href="/fr/" style="color: var(--color-gray-300);">Accueil</a>
+          <span style="color: var(--color-gray-400); margin: 0 var(--spacing-2);">/</span>
+          <span style="color: var(--color-white);">Menu</span>
+        </nav>
+        <h1 class="hero__title" style="font-size: var(--text-4xl);">Notre Menu</h1>
+        <p class="hero__subtitle" style="font-size: var(--text-lg);">
+          Découvrez tous nos plats japonais préparés avec passion
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTRES & RECHERCHE -->
+  <div class="menu-filters">
+    <div class="container">
+      <div class="menu-search">
+        <svg class="menu-search__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input type="text" id="menu-search" class="menu-search__input" placeholder="Rechercher un plat...">
+      </div>
+      
+      <div class="menu-categories">
+        <button class="menu-category-btn active" data-category-filter="all">Tout</button>
+        <button class="menu-category-btn" data-category-filter="entrees">Entrées</button>
+        <button class="menu-category-btn" data-category-filter="signature">Signature Rolls</button>
+        <button class="menu-category-btn" data-category-filter="california">California Rolls</button>
+        <button class="menu-category-btn" data-category-filter="plateaux">Plateaux</button>
+        <button class="menu-category-btn" data-category-filter="donburi">Donburi</button>
+        <button class="menu-category-btn" data-category-filter="sashimi">Sashimi</button>
+        <button class="menu-category-btn" data-category-filter="makis">Makis</button>
+      </div>
+      
+      <div class="menu-tags">
+        <button class="menu-tag-btn" data-tag-filter="new">Nouveau</button>
+        <button class="menu-tag-btn" data-tag-filter="popular">Populaire</button>
+        <button class="menu-tag-btn" data-tag-filter="veggie">Végétarien</button>
+        <button class="menu-tag-btn" data-tag-filter="spicy">Épicé</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- GRILLE MENU -->
+  <section class="section">
+    <div class="container">
+      <div class="menu-grid" id="menu-grid">
+        
+        <!-- ENTRÉES -->
+        <article class="menu-card" data-category="entrees">
+          <div class="menu-card__image-wrapper">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #d4a84b, #b8923f);"></div>
+            <span class="menu-card__pieces">5 pcs</span>
+          </div>
+          <div class="menu-card__content">
+            <span class="menu-card__number">#1</span>
+            <h3 class="menu-card__title">Karaage</h3>
+            <p class="menu-card__description">Beignets de poulet frit à la japonaise</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">7,40€</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="menu-card" data-category="entrees">
+          <div class="menu-card__image-wrapper">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #c8102e, #a00d24);"></div>
+            <span class="menu-card__pieces">4 pcs</span>
+          </div>
+          <div class="menu-card__content">
+            <span class="menu-card__number">#2A</span>
+            <h3 class="menu-card__title">Tempura crevette</h3>
+            <p class="menu-card__description">Crevettes en tempura croustillante</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">7,40€</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="menu-card" data-category="entrees">
+          <div class="menu-card__image-wrapper">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #ef4444, #dc2626);"></div>
+            <span class="menu-card__pieces">4 pcs</span>
+          </div>
+          <div class="menu-card__content">
+            <span class="menu-card__number">#2B</span>
+            <h3 class="menu-card__title">Dynamite crevette</h3>
+            <p class="menu-card__description">Crevettes dynamite épicées</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">7,90€</span>
+            </div>
+          </div>
+        </article>
+        
+        <!-- SIGNATURE ROLLS -->
+        <article class="menu-card" data-category="signature" data-tags="popular">
+          <div class="menu-card__image-wrapper">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #ff6b9d, #c8102e);"></div>
+            <div class="menu-card__badges">
+              <span class="badge badge--popular">Populaire</span>
+            </div>
+            <span class="menu-card__pieces">8 pcs</span>
+          </div>
+          <div class="menu-card__content">
+            <span class="menu-card__number">#51</span>
+            <h3 class="menu-card__title">Pink Lady</h3>
+            <p class="menu-card__description">Poulet, sauce spicy, concombre, mangue, mayo et pignon de pin</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">9,90€</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="menu-card" data-category="signature" data-tags="popular">
+          <div class="menu-card__image-wrapper">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #d4a84b, #b8923f);"></div>
+            <div class="menu-card__badges">
+              <span class="badge badge--popular">Populaire</span>
+            </div>
+            <span class="menu-card__pieces">8 pcs</span>
+          </div>
+          <div class="menu-card__content">
+            <span class="menu-card__number">#52</span>
+            <h3 class="menu-card__title">Kyoto</h3>
+            <p class="menu-card__description">Crevette tempura, cheese, saumon snacké, sauce spicy, sauce unagi, jeune oignon</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">9,90€</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="menu-card" data-category="signature" data-tags="new">
+          <div class="menu-card__image-wrapper">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #ff6b35, #ff8c42);"></div>
+            <div class="menu-card__badges">
+              <span class="badge badge--new">Nouveau</span>
+            </div>
+            <span class="menu-card__pieces">8 pcs</span>
+          </div>
+          <div class="menu-card__content">
+            <span class="menu-card__number">#53</span>
+            <h3 class="menu-card__title">Kyoto 2</h3>
+            <p class="menu-card__description">Saumon snacké, thon marinade, concombre, sauce spicy, unagi et ciboulette</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">9,90€</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="menu-card" data-category="signature" data-tags="popular">
+          <div class="menu-card__image-wrapper">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1a1a1a, #2d2d2d);"></div>
+            <div class="menu-card__badges">
+              <span class="badge badge--popular">Populaire</span>
+            </div>
+            <span class="menu-card__pieces">8 pcs</span>
+          </div>
+          <div class="menu-card__content">
+            <span class="menu-card__number">#54</span>
+            <h3 class="menu-card__title">Black Panther</h3>
+            <p class="menu-card__description">Tartare de saumon crème, concombre, sauce cocktail et jeune oignon</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">9,90€</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="menu-card" data-category="signature" data-tags="popular">
+          <div class="menu-card__image-wrapper">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #c8102e, #a00d24);"></div>
+            <div class="menu-card__badges">
+              <span class="badge badge--popular">Populaire</span>
+            </div>
+            <span class="menu-card__pieces">8 pcs</span>
+          </div>
+          <div class="menu-card__content">
+            <span class="menu-card__number">#55</span>
+            <h3 class="menu-card__title">Dragon Rolls</h3>
+            <p class="menu-card__description">Crevette tempura, surimi, avocat et sauce cocktail</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">9,90€</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="menu-card" data-category="signature" data-tags="spicy">
+          <div class="menu-card__image-wrapper">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #ef4444, #dc2626);"></div>
+            <div class="menu-card__badges">
+              <span class="badge badge--spicy">Épicé</span>
+            </div>
+            <span class="menu-card__pieces">8 pcs</span>
+          </div>
+          <div class="menu-card__content">
+            <span class="menu-card__number">#58B</span>
+            <h3 class="menu-card__title">I Spicy Sensei</h3>
+            <p class="menu-card__description">Crevette tempura, avocat, surimi, piment japonais, jalapeño spicy</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">9,90€</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="menu-card" data-category="signature" data-tags="veggie">
+          <div class="menu-card__image-wrapper">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #22c55e, #16a34a);"></div>
+            <div class="menu-card__badges">
+              <span class="badge badge--veggie">Végétarien</span>
+            </div>
+            <span class="menu-card__pieces">8 pcs</span>
+          </div>
+          <div class="menu-card__content">
+            <span class="menu-card__number">#61</span>
+            <h3 class="menu-card__title">Veggie Pogo</h3>
+            <p class="menu-card__description">Cheese, concombre, carotte, avocat et mangue</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">8,90€</span>
+            </div>
+          </div>
+        </article>
+        
+        <!-- CALIFORNIA ROLLS -->
+        <article class="menu-card" data-category="california">
+          <div class="menu-card__image-wrapper">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #3b82f6, #2563eb);"></div>
+            <span class="menu-card__pieces">8 pcs</span>
+          </div>
+          <div class="menu-card__content">
+            <span class="menu-card__number">#23</span>
+            <h3 class="menu-card__title">Saumon avocat ciboulette</h3>
+            <p class="menu-card__description">Saumon, avocat et ciboulette</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">8,20€</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="menu-card" data-category="california" data-tags="new">
+          <div class="menu-card__image-wrapper">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #ff6b35, #ff8c42);"></div>
+            <div class="menu-card__badges">
+              <span class="badge badge--new">Nouveau</span>
+            </div>
+            <span class="menu-card__pieces">8 pcs</span>
+          </div>
+          <div class="menu-card__content">
+            <span class="menu-card__number">#34</span>
+            <h3 class="menu-card__title">Poulet mangue</h3>
+            <p class="menu-card__description">Sauce katsu, oignon frit</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">8,90€</span>
+            </div>
+          </div>
+        </article>
+        
+        <!-- PLATEAUX -->
+        <article class="menu-card" data-category="plateaux">
+          <div class="menu-card__image-wrapper">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #d4a84b, #b8923f);"></div>
+            <span class="menu-card__pieces">22 pcs</span>
+          </div>
+          <div class="menu-card__content">
+            <span class="menu-card__number">#</span>
+            <h3 class="menu-card__title">Saumon Lover</h3>
+            <p class="menu-card__description">6 sushis saumon, 8 cali saumon avocat, 8 saumons rolls cheese</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">27,90€</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="menu-card" data-category="plateaux">
+          <div class="menu-card__image-wrapper">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #c8102e, #a00d24);"></div>
+            <span class="menu-card__pieces">32 pcs</span>
+          </div>
+          <div class="menu-card__content">
+            <span class="menu-card__number">#</span>
+            <h3 class="menu-card__title">Nogoto</h3>
+            <p class="menu-card__description">8 Kyoto, 8 Dynamique, 8 Pink Lady, 8 Black Panther</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">36,90€</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="menu-card" data-category="plateaux">
+          <div class="menu-card__image-wrapper">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1a1a1a, #2d2d2d);"></div>
+            <span class="menu-card__pieces">54 pcs</span>
+          </div>
+          <div class="menu-card__content">
+            <span class="menu-card__number">#</span>
+            <h3 class="menu-card__title">Sensei Luxe</h3>
+            <p class="menu-card__description">8 Pink Lady, 8 Kyoto, 8 Black Panther, 8 Dragon Rolls, 8 sushis saumon, 8 saumon rolls cheese, 6 gyoza scampis</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">76,90€</span>
+            </div>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="/fr/" class="footer__logo">
+              <img src="/img/logo-senseisushi.png" alt="Sensei Sushi" width="180">
+            </a>
+            <p class="footer__slogan">La cuisine japonaise tout en finesse</p>
+            <p class="footer__description">
+              Sushis frais, makis et rolls préparés chaque jour avec passion dans nos 3 restaurants à Bruxelles.
+            </p>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__title">Navigation</h4>
+            <ul class="footer__links">
+              <li><a href="/fr/">Accueil</a></li>
+              <li><a href="/fr/menu.html">Notre Menu</a></li>
+              <li><a href="/fr/restaurants.html">Nos Restaurants</a></li>
+              <li><a href="/fr/livraison.html">Livraison</a></li>
+              <li><a href="/fr/a-propos.html">À propos</a></li>
+              <li><a href="/fr/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__title">Menu Populaire</h4>
+            <ul class="footer__links">
+              <li><a href="/fr/menu/signature-rolls.html">Signature Rolls</a></li>
+              <li><a href="/fr/menu/california-rolls.html">California Rolls</a></li>
+              <li><a href="/fr/menu/plateaux.html">Plateaux</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__title">Contact</h4>
+            <ul class="footer__contact">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <a href="mailto:info@senseisushi.be">info@senseisushi.be</a>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <a href="tel:024252799">02 425 27 99</a>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>Lun-Dim: 11h00 - 22h00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-content">
+          <p class="footer__copyright">
+            © 2024 Sensei Sushi. Tous droits réservés. | TVA: BE0764.583.001
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/menu-filter.js"></script>
+</body>
+</html>
+

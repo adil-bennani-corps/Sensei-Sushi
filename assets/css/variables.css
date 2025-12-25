@@ -1,0 +1,184 @@
+/* ========================================
+   VARIABLES CSS - SENSEI SUSHI
+   Basées sur le menu PDF officiel
+   ======================================== */
+
+:root {
+  /* ========================================
+     PALETTE PRINCIPALE - SENSEI SUSHI
+     ======================================== */
+  
+  /* ROUGE SENSEI - Couleur principale */
+  --color-primary: #C8102E;           /* Rouge vif japonais */
+  --color-primary-dark: #A00D24;      /* Rouge foncé (hover) */
+  --color-primary-light: #E63950;     /* Rouge clair */
+  --color-primary-subtle: #FEE8EC;    /* Rouge très léger (backgrounds) */
+  
+  /* NOIR - Élégance japonaise */
+  --color-black: #1A1A1A;             /* Noir profond */
+  --color-black-light: #2D2D2D;       /* Noir secondaire */
+  --color-black-pure: #000000;        /* Noir pur */
+  
+  /* OR/DORÉ - Premium & Luxe */
+  --color-gold: #D4A84B;              /* Or principal */
+  --color-gold-light: #E8C068;        /* Or clair */
+  --color-gold-dark: #B8923F;         /* Or foncé */
+  
+  /* BLANC & CRÈME */
+  --color-white: #FFFFFF;
+  --color-off-white: #FAFAFA;
+  --color-cream: #F8F5F0;             /* Crème japonais */
+  --color-beige: #F5F0E8;
+  
+  /* GRIS - Textes et éléments */
+  --color-gray-50: #F9FAFB;
+  --color-gray-100: #F3F4F6;
+  --color-gray-200: #E5E7EB;
+  --color-gray-300: #D1D5DB;
+  --color-gray-400: #9CA3AF;
+  --color-gray-500: #6B7280;
+  --color-gray-600: #4B5563;          /* Texte secondaire */
+  --color-gray-700: #374151;
+  --color-gray-800: #1F2937;          /* Texte principal */
+  --color-gray-900: #111827;
+  
+  /* ACCENTS - Badges & Tags */
+  --color-new: #FF6B35;               /* Badge "NEW" - Orange vif */
+  --color-popular: #D4A84B;           /* Badge "Populaire" - Or */
+  --color-veggie: #22C55E;            /* Badge "Végétarien" - Vert */
+  --color-spicy: #EF4444;             /* Badge "Épicé" - Rouge */
+  
+  /* FONCTIONNELS */
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+  
+  /* OVERLAY & SHADOWS */
+  --overlay-dark: rgba(0, 0, 0, 0.7);
+  --overlay-light: rgba(0, 0, 0, 0.4);
+  --overlay-red: rgba(200, 16, 46, 0.9);
+  
+  /* ========================================
+     TYPOGRAPHIE - SENSEI SUSHI
+     ======================================== */
+  
+  /* Familles de polices */
+  --font-heading: 'Playfair Display', 'Noto Serif JP', Georgia, serif;
+  --font-body: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-accent: 'Noto Sans JP', sans-serif;  /* Pour texte japonais */
+  
+  /* Tailles - Échelle fluide */
+  --text-xs: clamp(0.7rem, 0.8vw, 0.75rem);       /* 12px */
+  --text-sm: clamp(0.8rem, 0.9vw, 0.875rem);      /* 14px */
+  --text-base: clamp(0.95rem, 1vw, 1rem);         /* 16px */
+  --text-lg: clamp(1.05rem, 1.15vw, 1.125rem);    /* 18px */
+  --text-xl: clamp(1.2rem, 1.35vw, 1.25rem);      /* 20px */
+  --text-2xl: clamp(1.4rem, 1.7vw, 1.5rem);       /* 24px */
+  --text-3xl: clamp(1.7rem, 2.2vw, 1.875rem);     /* 30px */
+  --text-4xl: clamp(2rem, 2.8vw, 2.25rem);        /* 36px */
+  --text-5xl: clamp(2.5rem, 4vw, 3rem);           /* 48px */
+  --text-6xl: clamp(3rem, 5vw, 3.75rem);          /* 60px */
+  --text-7xl: clamp(3.5rem, 6vw, 4.5rem);         /* 72px */
+  
+  /* Poids */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  
+  /* Line heights */
+  --leading-none: 1;
+  --leading-tight: 1.2;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+  --leading-loose: 2;
+  
+  /* Letter spacing */
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+  
+  /* ========================================
+     ESPACEMENTS
+     ======================================== */
+  
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;    /* 4px */
+  --spacing-2: 0.5rem;     /* 8px */
+  --spacing-3: 0.75rem;    /* 12px */
+  --spacing-4: 1rem;       /* 16px */
+  --spacing-5: 1.25rem;    /* 20px */
+  --spacing-6: 1.5rem;     /* 24px */
+  --spacing-8: 2rem;       /* 32px */
+  --spacing-10: 2.5rem;    /* 40px */
+  --spacing-12: 3rem;      /* 48px */
+  --spacing-14: 3.5rem;    /* 56px */
+  --spacing-16: 4rem;      /* 64px */
+  --spacing-20: 5rem;      /* 80px */
+  --spacing-24: 6rem;      /* 96px */
+  --spacing-32: 8rem;      /* 128px */
+  --spacing-40: 10rem;     /* 160px */
+  
+  /* Container */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+  --container-padding: var(--spacing-6);
+  
+  /* ========================================
+     OMBRES & EFFETS
+     ======================================== */
+  
+  /* Ombres subtiles */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.03);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  
+  /* Ombres colorées */
+  --shadow-red: 0 4px 20px rgba(200, 16, 46, 0.3);
+  --shadow-red-lg: 0 8px 30px rgba(200, 16, 46, 0.4);
+  --shadow-gold: 0 4px 20px rgba(212, 168, 75, 0.3);
+  
+  /* Ombre des cards */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.12), 0 16px 32px rgba(0, 0, 0, 0.08);
+  
+  /* Bordures */
+  --rounded-none: 0;
+  --rounded-sm: 4px;
+  --rounded: 6px;
+  --rounded-md: 8px;
+  --rounded-lg: 12px;
+  --rounded-xl: 16px;
+  --rounded-2xl: 24px;
+  --rounded-3xl: 32px;
+  --rounded-full: 9999px;
+  
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  /* Z-index */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-tooltip: 600;
+  --z-toast: 700;
+}
+
