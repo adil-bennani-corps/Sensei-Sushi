@@ -27,12 +27,20 @@ class MenuFilter {
   }
   
   initAccordions() {
-    // Initialize all sections as expanded by default
+    // Initialize all sections as collapsed by default
     this.categorySections.forEach(section => {
       const button = section.querySelector('.menu-category-section__title');
       const category = section.dataset.category;
       
       if (button) {
+        // Hide all cards in this section by default
+        this.menuCards.forEach(card => {
+          if (card.dataset.category === category) {
+            card.style.display = 'none';
+            card.classList.add('hidden');
+          }
+        });
+        
         button.addEventListener('click', () => {
           this.toggleSection(section, category);
         });
