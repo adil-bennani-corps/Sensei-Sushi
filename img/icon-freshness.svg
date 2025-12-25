@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
-  <!-- Leaf/Sprout Icon - Two rounded tear-drop shapes above -->
-  <g transform="translate(50, 18)">
-    <!-- Left leaf -->
-    <path d="M-5 -3 Q-5 -5 -3 -5 Q-1 -5 0 -3 Q1 -1 1 1 Q1 3 0 3 Q-1 3 -1 1 Q-1 -1 -2 -2 Q-3 -3 -4 -3 Q-5 -3 -5 -1 Q-5 1 -4 1 Q-3 1 -3 -1 Q-3 -3 -4 -3 Q-5 -3 -5 -1" fill="#1A1A1A"/>
-    <!-- Right leaf -->
-    <path d="M1 -3 Q1 -5 3 -5 Q5 -5 6 -3 Q7 -1 7 1 Q7 3 6 3 Q5 3 5 1 Q5 -1 4 -2 Q3 -3 2 -3 Q1 -3 1 -1 Q1 1 2 1 Q3 1 3 -1 Q3 -3 2 -3 Q1 -3 1 -1" fill="#1A1A1A"/>
+  <!-- Two rounded tear-drop shapes (leaves) above text -->
+  <g transform="translate(50, 22)">
+    <!-- Left leaf - rounded tear-drop -->
+    <path d="M-5 -4 Q-5 -6 -3 -6 Q-1 -6 0 -4 Q1 -2 1 0 Q1 2 0 2 Q-1 2 -1 0 Q-1 -2 -2 -3 Q-3 -4 -4 -4 Q-5 -4 -5 -2 Q-5 0 -4 0 Q-3 0 -3 -2 Q-3 -4 -4 -4" fill="#1A1A1A"/>
+    <!-- Right leaf - rounded tear-drop -->
+    <path d="M1 -4 Q1 -6 3 -6 Q5 -6 6 -4 Q7 -2 7 0 Q7 2 6 2 Q5 2 5 0 Q5 -2 4 -3 Q3 -4 2 -4 Q1 -4 1 -2 Q1 0 2 0 Q3 0 3 -2 Q3 -4 2 -4" fill="#1A1A1A"/>
   </g>
   
-  <!-- 100% Text - Bold, rounded sans-serif -->
-  <text x="50" y="48" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#1A1A1A" text-anchor="middle" letter-spacing="0.5px">100%</text>
+  <!-- 100% Text - Bold, rounded sans-serif style -->
+  <text x="50" y="50" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#1A1A1A" text-anchor="middle" letter-spacing="0.5px">100%</text>
   
-  <!-- FRESH Text - Smaller, bold -->
-  <text x="50" y="68" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#1A1A1A" text-anchor="middle" letter-spacing="1.5px">FRESH</text>
+  <!-- FRESH Text - Smaller, bold, uppercase -->
+  <text x="50" y="72" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#1A1A1A" text-anchor="middle" letter-spacing="2px">FRESH</text>
 </svg>
