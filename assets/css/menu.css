@@ -35,7 +35,7 @@
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  color: var(--color-gray-400);
+  color: var(--color-white);
   pointer-events: none;
 }
 
@@ -50,8 +50,8 @@
   padding: var(--spacing-2) var(--spacing-4);
   font-size: var(--text-sm);
   font-weight: var(--font-medium);
-  color: var(--color-gray-700);
-  background-color: var(--color-gray-100);
+  color: var(--color-white);
+  background-color: var(--color-bg-tertiary);
   border: 2px solid transparent;
   border-radius: var(--rounded-full);
   cursor: pointer;
@@ -59,8 +59,8 @@
 }
 
 .menu-category-btn:hover {
-  background-color: var(--color-gray-200);
-  color: var(--color-black);
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-primary-light);
 }
 
 .menu-category-btn.active {
@@ -83,7 +83,7 @@
   font-weight: var(--font-semibold);
   text-transform: uppercase;
   letter-spacing: var(--tracking-wide);
-  color: var(--color-gray-700);
+  color: var(--color-white);
   background-color: transparent;
   border: 2px solid var(--color-gray-300);
   border-radius: var(--rounded-full);
@@ -92,8 +92,8 @@
 }
 
 .menu-tag-btn:hover {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
+  border-color: var(--color-primary-light);
+  color: var(--color-primary-light);
 }
 
 .menu-tag-btn.active {
@@ -125,17 +125,17 @@
   width: 64px;
   height: 64px;
   margin: 0 auto var(--spacing-4);
-  color: var(--color-gray-400);
+  color: var(--color-white);
 }
 
 .menu-empty__content h3 {
   font-size: var(--text-xl);
-  color: var(--color-gray-700);
+  color: var(--color-white);
   margin-bottom: var(--spacing-2);
 }
 
 .menu-empty__content p {
-  color: var(--color-gray-600);
+  color: var(--color-white);
   font-size: var(--text-sm);
 }
 
@@ -157,7 +157,7 @@
   justify-content: space-between;
   font-size: var(--text-2xl);
   font-weight: var(--font-bold);
-  color: var(--color-black);
+  color: var(--color-white);
   margin-bottom: var(--spacing-6);
   padding: var(--spacing-3) var(--spacing-4);
   padding-bottom: var(--spacing-2);
@@ -171,7 +171,7 @@
 }
 
 .menu-category-section__title:hover {
-  background-color: var(--color-gray-50);
+  background-color: var(--color-bg-tertiary);
   border-radius: var(--rounded-lg);
 }
 

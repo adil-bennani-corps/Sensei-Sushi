@@ -55,7 +55,7 @@
 /* Secondary Button */
 .btn--secondary {
   background-color: var(--color-gold);
-  color: var(--color-black);
+  color: var(--color-primary);
   border-color: var(--color-gold);
 }
 
@@ -86,25 +86,25 @@
 
 .btn--outline-white:hover {
   background-color: var(--color-white);
-  color: var(--color-black);
+  color: var(--color-primary);
 }
 
 /* Ghost Button */
 .btn--ghost {
   background: transparent;
-  color: var(--color-gray-700);
+  color: var(--color-white);
   border-color: transparent;
 }
 
 .btn--ghost:hover {
-  background-color: var(--color-gray-100);
-  color: var(--color-primary);
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-primary-light);
 }
 
 /* White Button */
 .btn--white {
   background-color: var(--color-white);
-  color: var(--color-black);
+  color: var(--color-primary);
   border-color: var(--color-white);
 }
 

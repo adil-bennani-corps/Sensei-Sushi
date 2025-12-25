@@ -10,11 +10,13 @@
   overflow: hidden;
   box-shadow: var(--shadow-card);
   transition: all var(--transition-normal);
+  border: 1px solid transparent;
 }
 
 .menu-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(200, 16, 46, 0.2);
+  border-color: rgba(200, 16, 46, 0.3);
 }
 
 /* Image */
@@ -22,7 +24,7 @@
   position: relative;
   height: 200px;
   overflow: hidden;
-  background-color: var(--color-gray-100);
+  background-color: var(--color-bg-tertiary);
 }
 
 .menu-card__image {
@@ -33,7 +35,7 @@
 }
 
 .menu-card:hover .menu-card__image {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 /* Badges */
@@ -112,6 +114,14 @@
   overflow: hidden;
   height: 280px;
   text-decoration: none;
+  transition: all var(--transition-normal);
+  border: 2px solid transparent;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 0 2px rgba(200, 16, 46, 0.3);
+  border-color: rgba(200, 16, 46, 0.4);
 }
 
 .category-card__image-wrapper {
@@ -127,7 +137,7 @@
 }
 
 .category-card:hover .category-card__image {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .category-card__overlay {
@@ -202,18 +212,20 @@
   overflow: hidden;
   box-shadow: var(--shadow-card);
   transition: all var(--transition-normal);
+  border: 1px solid transparent;
 }
 
 .restaurant-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(212, 168, 75, 0.2);
+  border-color: rgba(212, 168, 75, 0.3);
 }
 
 .restaurant-card__image-wrapper {
   position: relative;
   height: 200px;
   overflow: hidden;
-  background-color: var(--color-gray-100);
+  background-color: var(--color-bg-tertiary);
 }
 
 .restaurant-card__image {
@@ -224,7 +236,7 @@
 }
 
 .restaurant-card:hover .restaurant-card__image {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .restaurant-card__badge {
@@ -232,7 +244,7 @@
   top: var(--spacing-4);
   left: var(--spacing-4);
   background-color: var(--color-gold);
-  color: var(--color-black);
+  color: var(--color-primary);
   padding: var(--spacing-1) var(--spacing-3);
   border-radius: var(--rounded-full);
   font-size: var(--text-xs);
@@ -315,7 +327,7 @@
 
 .badge--popular {
   background-color: var(--color-gold);
-  color: var(--color-black);
+  color: var(--color-primary);
 }
 
 .badge--veggie {

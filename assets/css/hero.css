@@ -73,12 +73,13 @@
 }
 
 .hero__title {
-  font-size: var(--text-6xl);
+  font-size: var(--text-7xl);
   font-weight: var(--font-bold);
   line-height: var(--leading-tight);
-  margin-bottom: var(--spacing-6);
+  margin-bottom: var(--spacing-8);
   color: var(--color-white);
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  letter-spacing: var(--tracking-tight);
 }
 
 .hero__title-accent {
@@ -87,13 +88,14 @@
 }
 
 .hero__subtitle {
-  font-size: var(--text-xl);
+  font-size: var(--text-2xl);
   line-height: var(--leading-relaxed);
-  margin-bottom: var(--spacing-10);
-  color: var(--color-gray-200);
-  max-width: 700px;
+  margin-bottom: var(--spacing-12);
+  color: var(--color-white);
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  font-weight: var(--font-normal);
 }
 
 .hero__buttons {

@@ -123,7 +123,7 @@
 .nav__dropdown a {
   display: block;
   padding: var(--spacing-3) var(--spacing-4);
-  color: var(--color-gray-800);
+  color: var(--color-white);
   border-radius: var(--rounded-md);
   transition: all var(--transition-fast);
 }
@@ -237,7 +237,7 @@
   
   .nav__dropdown a {
     padding-left: var(--spacing-6);
-    color: var(--color-gray-600);
+    color: var(--color-white);
   }
   
   .nav__cta {

@@ -4,7 +4,7 @@
 
 .footer {
   background-color: var(--color-bg-secondary);
-  color: var(--color-gray-400);
+  color: var(--color-white);
   padding: var(--spacing-20) 0 var(--spacing-8);
 }
 
@@ -152,7 +152,7 @@
 
 .footer__legal a {
   font-size: var(--text-sm);
-  color: var(--color-gray-500);
+  color: var(--color-white);
   transition: color var(--transition-fast);
 }
 

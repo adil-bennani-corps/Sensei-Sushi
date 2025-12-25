@@ -5,12 +5,12 @@
 /* Dark Mode Base */
 html {
   background-color: var(--color-bg-primary);
-  color: var(--color-gray-800);
+  color: var(--color-white);
 }
 
 body {
   background-color: var(--color-bg-primary);
-  color: var(--color-gray-800);
+  color: var(--color-white);
 }
 
 /* Typography */
@@ -23,17 +23,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: var(--text-5xl);
+  font-size: var(--text-6xl);
   letter-spacing: var(--tracking-tight);
+  font-weight: var(--font-bold);
 }
 
 h2 {
-  font-size: var(--text-4xl);
+  font-size: var(--text-5xl);
   letter-spacing: var(--tracking-tight);
+  font-weight: var(--font-bold);
 }
 
 h3 {
   font-size: var(--text-3xl);
+  font-weight: var(--font-bold);
 }
 
 h4 {

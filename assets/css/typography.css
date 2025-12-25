@@ -37,8 +37,8 @@
 
 /* Colors */
 .text-primary { color: var(--color-primary); }
-.text-black { color: var(--color-black); }
+.text-black { color: var(--color-white); }
 .text-white { color: var(--color-white); }
-.text-gray-600 { color: var(--color-gray-600); }
-.text-gray-700 { color: var(--color-gray-700); }
+.text-gray-600 { color: var(--color-white); }
+.text-gray-700 { color: var(--color-white); }
 

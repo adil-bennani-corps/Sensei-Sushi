@@ -23,8 +23,8 @@ body {
   font-size: var(--text-base);
   font-weight: var(--font-normal);
   line-height: var(--leading-relaxed);
-  color: var(--color-gray-800);
-  background-color: var(--color-white);
+  color: var(--color-white);
+  background-color: var(--color-bg-primary);
   overflow-x: hidden;
 }
 
