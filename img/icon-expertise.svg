@@ -1,12 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
-  <circle cx="50" cy="50" r="48" fill="#D4A84B" opacity="0.1"/>
-  <circle cx="50" cy="32" r="12" fill="#D4A84B" stroke="#B8923F" stroke-width="1.5"/>
-  <path d="M38 48 Q38 55 42 58 L42 75 L58 75 L58 58 Q62 55 62 48 Z" fill="#D4A84B" stroke="#B8923F" stroke-width="1.5"/>
-  <circle cx="45" cy="30" r="1.5" fill="#1A1A1A"/>
-  <circle cx="50" cy="30" r="1.5" fill="#1A1A1A"/>
-  <circle cx="55" cy="30" r="1.5" fill="#1A1A1A"/>
-  <path d="M45 50 L55 50" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
-  <path d="M50 45 L50 55" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
-  <path d="M50 60 L50 70" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="expertGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4A84B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8923F;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="48" fill="url(#expertGrad)" opacity="0.1"/>
+  <circle cx="50" cy="30" r="14" fill="url(#expertGrad)" stroke="#B8923F" stroke-width="1.5"/>
+  <path d="M36 48 Q36 58 42 62 L42 78 L58 78 L58 62 Q64 58 64 48" fill="url(#expertGrad)" stroke="#B8923F" stroke-width="1.5" stroke-linejoin="round"/>
+  <circle cx="45" cy="28" r="2" fill="#1A1A1A"/>
+  <circle cx="50" cy="28" r="2" fill="#1A1A1A"/>
+  <circle cx="55" cy="28" r="2" fill="#1A1A1A"/>
+  <path d="M45 50 L55 50" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M50 45 L50 55" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M50 62 L50 72" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M42 62 L58 62" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"/>
 </svg>
 
