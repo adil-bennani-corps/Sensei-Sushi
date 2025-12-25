@@ -92,7 +92,7 @@
 
 .section-subtitle {
   font-size: var(--text-lg);
-  color: var(--color-gray-500);
+  color: var(--color-white);
   line-height: var(--leading-relaxed);
 }
 

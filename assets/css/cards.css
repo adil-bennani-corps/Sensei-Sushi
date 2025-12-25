@@ -66,7 +66,7 @@
 
 .menu-card__number {
   font-size: var(--text-xs);
-  color: var(--color-gray-400);
+  color: var(--color-white);
   font-weight: var(--font-medium);
   margin-bottom: var(--spacing-1);
 }
@@ -75,13 +75,13 @@
   font-family: var(--font-heading);
   font-size: var(--text-lg);
   font-weight: var(--font-bold);
-  color: var(--color-black);
+  color: var(--color-white);
   margin-bottom: var(--spacing-2);
 }
 
 .menu-card__description {
   font-size: var(--text-sm);
-  color: var(--color-gray-600);
+  color: var(--color-white);
   line-height: var(--leading-relaxed);
   margin-bottom: var(--spacing-4);
   display: -webkit-box;
@@ -170,7 +170,7 @@
 
 .category-card__count {
   font-size: var(--text-sm);
-  color: var(--color-gray-300);
+  color: var(--color-white);
 }
 
 .category-card__arrow {
@@ -256,7 +256,7 @@
   align-items: flex-start;
   gap: var(--spacing-2);
   font-style: normal;
-  color: var(--color-gray-400);
+  color: var(--color-white);
   margin-bottom: var(--spacing-4);
   line-height: var(--leading-normal);
 }
@@ -278,7 +278,7 @@
   display: flex;
   align-items: center;
   gap: var(--spacing-2);
-  color: var(--color-gray-700);
+  color: var(--color-white);
   font-weight: var(--font-medium);
   transition: color var(--transition-fast);
 }

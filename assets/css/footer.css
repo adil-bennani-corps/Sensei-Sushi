@@ -43,7 +43,7 @@
 .footer__description {
   font-size: var(--text-sm);
   line-height: var(--leading-relaxed);
-  color: var(--color-gray-400);
+  color: var(--color-white);
   margin-bottom: var(--spacing-6);
 }
 
@@ -89,7 +89,7 @@
 }
 
 .footer__links a {
-  color: var(--color-gray-400);
+  color: var(--color-white);
   font-size: var(--text-sm);
   transition: color var(--transition-fast);
 }
@@ -109,7 +109,7 @@
   align-items: flex-start;
   gap: var(--spacing-2);
   font-size: var(--text-sm);
-  color: var(--color-gray-400);
+  color: var(--color-white);
 }
 
 .footer__contact svg {
@@ -119,7 +119,7 @@
 }
 
 .footer__contact a {
-  color: var(--color-gray-400);
+  color: var(--color-white);
   transition: color var(--transition-fast);
 }
 
@@ -142,7 +142,7 @@
 
 .footer__copyright {
   font-size: var(--text-sm);
-  color: var(--color-gray-500);
+  color: var(--color-white);
 }
 
 .footer__legal {
