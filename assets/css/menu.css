@@ -127,12 +127,12 @@
 }
 
 /* Compensate for fixed filters */
-.section:has(.menu-grid) {
+.section--menu-grid {
   padding-top: 200px;
 }
 
 @media (max-width: 768px) {
-  .section:has(.menu-grid) {
+  .section--menu-grid {
     padding-top: 250px;
   }
 }
