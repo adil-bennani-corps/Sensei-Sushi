@@ -172,6 +172,30 @@
   transform: scale(1.1);
 }
 
+/* Faster animations on mobile */
+@media (max-width: 768px) {
+  [data-animate].animated {
+    animation-duration: 0.5s;
+  }
+  
+  [data-delay="100"] { animation-delay: 50ms; }
+  [data-delay="200"] { animation-delay: 100ms; }
+  [data-delay="300"] { animation-delay: 150ms; }
+  [data-delay="400"] { animation-delay: 200ms; }
+  [data-delay="500"] { animation-delay: 250ms; }
+  [data-delay="600"] { animation-delay: 300ms; }
+  
+  .hover-lift,
+  .hover-scale,
+  .hover-glow {
+    transition-duration: 200ms;
+  }
+  
+  .img-zoom img {
+    transition-duration: 300ms;
+  }
+}
+
 /* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   *,

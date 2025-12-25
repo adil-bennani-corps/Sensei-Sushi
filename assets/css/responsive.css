@@ -23,6 +23,17 @@
   }
 }
 
+/* Faster transitions on mobile */
+@media (max-width: 768px) {
+  *,
+  *::before,
+  *::after {
+    --transition-fast: 100ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
 /* Small (480px - 767px) */
 @media (min-width: 480px) and (max-width: 767px) {
   .grid--4,
