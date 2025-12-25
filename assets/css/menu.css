@@ -6,8 +6,10 @@
   background-color: var(--color-white);
   padding: var(--spacing-6) 0;
   border-bottom: 1px solid var(--color-gray-200);
-  position: sticky;
+  position: fixed;
   top: 80px;
+  left: 0;
+  right: 0;
   z-index: var(--z-sticky);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: box-shadow var(--transition-normal);
@@ -122,6 +124,17 @@
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: var(--spacing-6);
   padding: var(--spacing-8) 0;
+}
+
+/* Compensate for fixed filters */
+.section:has(.menu-grid) {
+  padding-top: 200px;
+}
+
+@media (max-width: 768px) {
+  .section:has(.menu-grid) {
+    padding-top: 250px;
+  }
 }
 
 .menu-empty {
