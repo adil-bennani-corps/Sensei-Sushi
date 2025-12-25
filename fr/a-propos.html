@@ -94,8 +94,9 @@
           </p>
         </div>
         <div data-animate="fade-left">
-          <div style="width: 100%; height: 500px; background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)); border-radius: var(--rounded-2xl); display: flex; align-items: center; justify-content: center; color: white; font-size: 120px;">
-            🍣
+          <div style="width: 100%; height: 500px; border-radius: var(--rounded-2xl); overflow: hidden; position: relative;">
+            <img src="/img/about-sushi.jpg" alt="Sushis Sensei Sushi" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+            <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(200, 16, 46, 0.2), rgba(200, 16, 46, 0.05));"></div>
           </div>
         </div>
       </div>
@@ -111,7 +112,9 @@
       
       <div class="grid grid--3" style="margin-top: var(--spacing-12);">
         <div data-animate="fade-up" style="text-align: center; padding: var(--spacing-8); background: var(--color-white); border-radius: var(--rounded-xl); box-shadow: var(--shadow-md);">
-          <div style="font-size: 64px; margin-bottom: var(--spacing-4);">🍣</div>
+          <div style="width: 120px; height: 120px; margin: 0 auto var(--spacing-4); border-radius: var(--rounded-lg); overflow: hidden;">
+            <img src="/img/sushi-fresh.jpg" alt="Fraîcheur" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          </div>
           <h3 style="font-size: var(--text-xl); margin-bottom: var(--spacing-4);">Fraîcheur</h3>
           <p style="color: var(--color-gray-600); line-height: var(--leading-relaxed);">
             Nous sélectionnons chaque jour les meilleurs ingrédients pour garantir une fraîcheur optimale dans tous nos plats.
@@ -119,7 +122,9 @@
         </div>
         
         <div data-animate="fade-up" data-delay="100" style="text-align: center; padding: var(--spacing-8); background: var(--color-white); border-radius: var(--rounded-xl); box-shadow: var(--shadow-md);">
-          <div style="font-size: 64px; margin-bottom: var(--spacing-4);">👨‍🍳</div>
+          <div style="width: 120px; height: 120px; margin: 0 auto var(--spacing-4); border-radius: var(--rounded-lg); overflow: hidden;">
+            <img src="/img/chef-cooking.jpg" alt="Savoir-faire" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          </div>
           <h3 style="font-size: var(--text-xl); margin-bottom: var(--spacing-4);">Savoir-faire</h3>
           <p style="color: var(--color-gray-600); line-height: var(--leading-relaxed);">
             Nos chefs maîtrisent les techniques traditionnelles japonaises et créent des plats uniques avec passion et créativité.
@@ -127,7 +132,11 @@
         </div>
         
         <div data-animate="fade-up" data-delay="200" style="text-align: center; padding: var(--spacing-8); background: var(--color-white); border-radius: var(--rounded-xl); box-shadow: var(--shadow-md);">
-          <div style="font-size: 64px; margin-bottom: var(--spacing-4);">❤️</div>
+          <div style="width: 120px; height: 120px; margin: 0 auto var(--spacing-4); border-radius: var(--rounded-full); background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)); display: flex; align-items: center; justify-content: center;">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
           <h3 style="font-size: var(--text-xl); margin-bottom: var(--spacing-4);">Passion</h3>
           <p style="color: var(--color-gray-600); line-height: var(--leading-relaxed);">
             Chaque plat est préparé avec amour et attention aux détails pour vous offrir une expérience culinaire mémorable.
