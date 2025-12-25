@@ -167,6 +167,10 @@
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero__background">
+      <video class="hero__video" autoplay muted loop playsinline>
+        <source src="/img/senseisushi.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo HTML5.
+      </video>
       <div class="hero__overlay"></div>
       <div class="hero__pattern"></div>
     </div>
@@ -229,20 +233,20 @@
       </div>
       
       <div class="grid grid--3" style="margin-top: var(--spacing-12);">
-        <div class="flex flex--col" data-animate="fade-up" data-delay="100">
-          <div style="font-size: 48px; margin-bottom: var(--spacing-4);">🍣</div>
+        <div class="flex flex--col" data-animate="fade-up" data-delay="100" style="align-items: center; text-align: center;">
+          <img src="/img/icon-sushi.svg" alt="Sushi frais" style="width: 80px; height: 80px; margin-bottom: var(--spacing-4);" loading="lazy">
           <h3 style="font-size: var(--text-xl); margin-bottom: var(--spacing-2);">Fraîcheur</h3>
           <p style="color: var(--color-gray-600);">Nos poissons sont sélectionnés chaque jour pour garantir une fraîcheur optimale.</p>
         </div>
         
-        <div class="flex flex--col" data-animate="fade-up" data-delay="200">
-          <div style="font-size: 48px; margin-bottom: var(--spacing-4);">👨‍🍳</div>
+        <div class="flex flex--col" data-animate="fade-up" data-delay="200" style="align-items: center; text-align: center;">
+          <img src="/img/icon-chef.svg" alt="Chef japonais" style="width: 80px; height: 80px; margin-bottom: var(--spacing-4);" loading="lazy">
           <h3 style="font-size: var(--text-xl); margin-bottom: var(--spacing-2);">Savoir-faire</h3>
           <p style="color: var(--color-gray-600);">Nos chefs maîtrisent les techniques traditionnelles japonaises avec passion.</p>
         </div>
         
-        <div class="flex flex--col" data-animate="fade-up" data-delay="300">
-          <div style="font-size: 48px; margin-bottom: var(--spacing-4);">🚚</div>
+        <div class="flex flex--col" data-animate="fade-up" data-delay="300" style="align-items: center; text-align: center;">
+          <img src="/img/icon-delivery.svg" alt="Livraison" style="width: 80px; height: 80px; margin-bottom: var(--spacing-4);" loading="lazy">
           <h3 style="font-size: var(--text-xl); margin-bottom: var(--spacing-2);">Livraison</h3>
           <p style="color: var(--color-gray-600);">Commandez en ligne et recevez vos sushis frais directement chez vous.</p>
         </div>
@@ -590,7 +594,9 @@
           </a>
         </div>
         <div data-animate="fade-left">
-          <div style="width: 100%; height: 400px; background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)); border-radius: var(--rounded-2xl); display: flex; align-items: center; justify-content: center; color: white; font-size: 64px;">🚚</div>
+          <div style="width: 100%; height: 400px; background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)); border-radius: var(--rounded-2xl); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+            <img src="/img/icon-delivery.svg" alt="Livraison" style="width: 200px; height: 200px; opacity: 0.8;" loading="lazy">
+          </div>
         </div>
       </div>
     </div>
