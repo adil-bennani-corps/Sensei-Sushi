@@ -31,17 +31,22 @@
   padding: var(--spacing-32) 0;
 }
 
+.section {
+  background-color: var(--color-bg-primary);
+  color: var(--color-gray-800);
+}
+
 .section--dark {
-  background-color: var(--color-black);
+  background-color: var(--color-bg-secondary);
   color: var(--color-white);
 }
 
 .section--cream {
-  background-color: var(--color-cream);
+  background-color: var(--color-bg-secondary);
 }
 
 .section--gray {
-  background-color: var(--color-gray-50);
+  background-color: var(--color-bg-secondary);
 }
 
 .section--red {
@@ -87,7 +92,7 @@
 
 .section-subtitle {
   font-size: var(--text-lg);
-  color: var(--color-gray-600);
+  color: var(--color-gray-500);
   line-height: var(--leading-relaxed);
 }
 

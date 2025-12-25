@@ -3,8 +3,8 @@
    ======================================== */
 
 .footer {
-  background-color: var(--color-black);
-  color: var(--color-gray-300);
+  background-color: var(--color-bg-secondary);
+  color: var(--color-gray-400);
   padding: var(--spacing-20) 0 var(--spacing-8);
 }
 

@@ -13,16 +13,16 @@
 }
 
 .header--scrolled {
-  background-color: var(--color-white);
+  background-color: var(--color-bg-secondary);
   box-shadow: var(--shadow-md);
 }
 
 .header--scrolled .nav__logo img {
-  filter: brightness(0);
+  filter: brightness(1);
 }
 
 .header--scrolled .nav__link {
-  color: var(--color-black);
+  color: var(--color-white);
 }
 
 .header--scrolled .nav__link:hover {
@@ -82,7 +82,7 @@
 }
 
 .header--scrolled .nav__link {
-  color: var(--color-black);
+  color: var(--color-white);
 }
 
 .nav__link:hover {
@@ -105,7 +105,7 @@
   left: 0;
   margin-top: var(--spacing-2);
   min-width: 220px;
-  background-color: var(--color-white);
+  background-color: var(--color-bg-card);
   border-radius: var(--rounded-lg);
   box-shadow: var(--shadow-xl);
   padding: var(--spacing-2);
@@ -164,13 +164,13 @@
   display: block;
   width: 100%;
   height: 2px;
-  background-color: var(--color-white);
+  background-color: var(--color-bg-card);
   border-radius: var(--rounded-full);
   transition: all var(--transition-normal);
 }
 
 .header--scrolled .nav__toggle-line {
-  background-color: var(--color-black);
+  background-color: var(--color-white);
 }
 
 .nav__toggle.active .nav__toggle-line:nth-child(1) {
@@ -198,7 +198,7 @@
     right: -100%;
     width: min(85%, 400px);
     height: 100vh;
-    background-color: var(--color-white);
+    background-color: var(--color-bg-card);
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
@@ -214,13 +214,13 @@
   }
   
   .nav__item {
-    border-bottom: 1px solid var(--color-gray-100);
+    border-bottom: 1px solid var(--color-gray-300);
   }
   
   .nav__link {
     display: block;
     padding: var(--spacing-4) 0;
-    color: var(--color-black);
+    color: var(--color-white);
     font-size: var(--text-lg);
   }
   
