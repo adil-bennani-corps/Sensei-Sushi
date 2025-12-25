@@ -40,9 +40,9 @@
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(0, 0, 0, 0.6) 0%,
-    rgba(200, 16, 46, 0.3) 50%,
-    rgba(0, 0, 0, 0.7) 100%
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(200, 16, 46, 0.2) 50%,
+    rgba(0, 0, 0, 0.6) 100%
   );
 }
 
@@ -73,10 +73,10 @@
 }
 
 .hero__title {
-  font-size: var(--text-7xl);
+  font-size: var(--text-6xl);
   font-weight: var(--font-bold);
   line-height: var(--leading-tight);
-  margin-bottom: var(--spacing-8);
+  margin-bottom: var(--spacing-6);
   color: var(--color-white);
   text-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
   letter-spacing: var(--tracking-tight);
@@ -88,14 +88,15 @@
 }
 
 .hero__subtitle {
-  font-size: var(--text-2xl);
+  font-size: var(--text-xl);
   line-height: var(--leading-relaxed);
-  margin-bottom: var(--spacing-12);
+  margin-bottom: var(--spacing-10);
   color: var(--color-white);
-  max-width: 800px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   font-weight: var(--font-normal);
+  opacity: 0.95;
 }
 
 .hero__buttons {

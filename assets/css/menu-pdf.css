@@ -1,0 +1,60 @@
+/* ========================================
+   MENU PDF VIEWER - SENSEI SUSHI
+   ======================================== */
+
+.menu-pdf-container {
+  position: relative;
+}
+
+.menu-pdf-wrapper {
+  position: relative;
+  min-height: 600px;
+}
+
+.menu-pdf-wrapper iframe {
+  transition: opacity var(--transition-normal);
+}
+
+.menu-pdf-wrapper iframe[src] {
+  opacity: 1;
+}
+
+.menu-pdf-loading {
+  transition: opacity var(--transition-normal);
+  z-index: 1;
+}
+
+.menu-pdf-loading.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-pdf-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-pdf-wrapper {
+    height: 600px;
+  }
+  
+  .menu-pdf-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .menu-pdf-controls > div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu-pdf-controls .btn {
+    flex: 1;
+  }
+}
+

@@ -8,13 +8,14 @@
   left: 0;
   right: 0;
   z-index: var(--z-fixed);
-  background-color: transparent;
+  background-color: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(10px);
   transition: all var(--transition-normal);
 }
 
 .header--scrolled {
-  background-color: var(--color-bg-secondary);
-  box-shadow: var(--shadow-md);
+  background-color: rgba(30, 30, 30, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .header--scrolled .nav__logo img {

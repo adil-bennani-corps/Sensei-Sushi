@@ -20,14 +20,25 @@
   
   .section-title {
     font-size: var(--text-3xl);
+    margin-bottom: var(--spacing-4);
+  }
+  
+  .section-subtitle {
+    font-size: var(--text-base);
   }
   
   .hero__title {
     font-size: var(--text-4xl);
+    margin-bottom: var(--spacing-5);
   }
   
   .hero__subtitle {
     font-size: var(--text-lg);
+    margin-bottom: var(--spacing-8);
+  }
+  
+  .section-header {
+    margin-bottom: var(--spacing-8);
   }
 }
 
@@ -39,6 +50,16 @@
     --transition-fast: 100ms cubic-bezier(0.4, 0, 0.2, 1);
     --transition-normal: 200ms cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .menu-card,
+  .restaurant-card,
+  .category-card {
+    margin-bottom: var(--spacing-4);
+  }
+  
+  .grid {
+    gap: var(--spacing-4);
   }
 }
 

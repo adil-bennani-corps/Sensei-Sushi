@@ -61,6 +61,7 @@
   <link rel="stylesheet" href="/assets/css/hero.css">
   <link rel="stylesheet" href="/assets/css/forms.css">
   <link rel="stylesheet" href="/assets/css/animations.css">
+  <link rel="stylesheet" href="/assets/css/menu-pdf.css">
   <link rel="stylesheet" href="/assets/css/responsive.css">
   <link rel="stylesheet" href="/assets/css/utilities.css">
   
@@ -79,6 +80,11 @@
     "description": "Restaurant japonais à Bruxelles spécialisé dans les sushis frais, makis, california rolls et signature rolls. 3 adresses : Jette, Schaerbeek et Miroir Meiser.",
     "servesCuisine": ["Japanese", "Sushi", "Asian"],
     "priceRange": "€€",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "150"
+    },
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -95,8 +101,26 @@
         "postalCode": "1090",
         "addressRegion": "Bruxelles",
         "addressCountry": "BE"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Chaussée de Louvain 608",
+        "addressLocality": "Schaerbeek",
+        "postalCode": "1030",
+        "addressRegion": "Bruxelles",
+        "addressCountry": "BE"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Quai au bois à brûler 3A",
+        "addressLocality": "Bruxelles",
+        "postalCode": "1000",
+        "addressRegion": "Bruxelles",
+        "addressCountry": "BE"
       }
-    ]
+    ],
+    "hasMenu": "https://senseisushi.be/menu/sensei-sushi-menu.pdf",
+    "acceptsReservations": "True"
   }
   </script>
 </head>
@@ -331,6 +355,58 @@
             <path d="M5 12h14M12 5l7 7-7 7"/>
           </svg>
         </a>
+      </div>
+      
+      <!-- MENU PDF INTÉGRÉ -->
+      <div style="margin-top: var(--spacing-16);" data-animate="fade-up" data-delay="400">
+        <div class="section-header">
+          <h2 class="section-title" style="font-size: var(--text-3xl); margin-bottom: var(--spacing-4);">Menu Complet</h2>
+          <p class="section-subtitle" style="margin-bottom: var(--spacing-6);">Consultez notre menu complet en ligne ou téléchargez-le</p>
+        </div>
+        
+        <div class="menu-pdf-container" style="background: var(--color-bg-card); border-radius: var(--rounded-2xl); padding: var(--spacing-6); box-shadow: var(--shadow-lg);">
+          <div class="menu-pdf-controls" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-4); flex-wrap: wrap; gap: var(--spacing-3);">
+            <div style="display: flex; gap: var(--spacing-2); align-items: center;">
+              <span style="color: var(--color-white); font-size: var(--text-sm); font-weight: var(--font-medium);">Contrôles du menu :</span>
+              <a href="https://senseisushi.be/menu/sensei-sushi-menu.pdf" target="_blank" rel="noopener" class="btn btn--outline btn--sm" title="Ouvrir dans un nouvel onglet">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+                Ouvrir
+              </a>
+            </div>
+            <a href="https://senseisushi.be/menu/sensei-sushi-menu.pdf" download="Sensei-Sushi-Menu.pdf" class="btn btn--primary btn--sm">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Télécharger le PDF
+            </a>
+          </div>
+          
+          <div class="menu-pdf-wrapper" style="position: relative; width: 100%; height: 800px; border-radius: var(--rounded-lg); overflow: hidden; background: var(--color-bg-tertiary); border: 1px solid var(--color-gray-300);">
+            <iframe 
+              id="menu-pdf-viewer"
+              src="https://senseisushi.be/menu/sensei-sushi-menu.pdf#toolbar=1&navpanes=0&scrollbar=1&zoom=page-width"
+              style="width: 100%; height: 100%; border: none;"
+              title="Menu Sensei Sushi - Consultez notre menu complet de sushis, makis, rolls et plats japonais"
+              loading="lazy"
+              allow="fullscreen"
+            ></iframe>
+            <div class="menu-pdf-loading" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: var(--color-bg-tertiary); color: var(--color-white); z-index: 1;">
+              <div style="text-align: center;">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="animation: spin 1s linear infinite; margin-bottom: var(--spacing-4);">
+                  <circle cx="12" cy="12" r="10" opacity="0.25"/>
+                  <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"/>
+                </svg>
+                <p style="color: var(--color-white);">Chargement du menu...</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -938,6 +1014,21 @@
   <!-- JavaScript -->
   <script src="/assets/js/main.js"></script>
   <script src="/assets/js/form-validation.js"></script>
+  <script>
+    // Masquer le loader du PDF une fois chargé
+    document.addEventListener('DOMContentLoaded', function() {
+      const pdfViewer = document.getElementById('menu-pdf-viewer');
+      const pdfLoading = document.querySelector('.menu-pdf-loading');
+      
+      if (pdfViewer && pdfLoading) {
+        pdfViewer.addEventListener('load', function() {
+          setTimeout(function() {
+            pdfLoading.classList.add('hidden');
+          }, 500);
+        });
+      }
+    });
+  </script>
 </body>
 </html>
 
