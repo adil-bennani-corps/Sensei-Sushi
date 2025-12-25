@@ -105,15 +105,12 @@
 }
 
 .hero__scroll {
-  position: absolute;
-  bottom: var(--spacing-8);
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-2);
   color: var(--color-white);
+  margin-top: var(--spacing-10);
   animation: float 3s ease-in-out infinite;
 }
 
