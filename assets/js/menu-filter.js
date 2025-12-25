@@ -23,6 +23,67 @@ class MenuFilter {
   
   init() {
     this.bindEvents();
+    this.initAccordions();
+  }
+  
+  initAccordions() {
+    // Initialize all sections as expanded by default
+    this.categorySections.forEach(section => {
+      const button = section.querySelector('.menu-category-section__title');
+      const category = section.dataset.category;
+      
+      if (button) {
+        button.addEventListener('click', () => {
+          this.toggleSection(section, category);
+        });
+      }
+    });
+  }
+  
+  toggleSection(section, category) {
+    const button = section.querySelector('.menu-category-section__title');
+    const isExpanded = button.getAttribute('aria-expanded') === 'true';
+    const newState = !isExpanded;
+    
+    button.setAttribute('aria-expanded', newState);
+    
+    // Show/hide all cards in this category
+    this.menuCards.forEach(card => {
+      if (card.dataset.category === category) {
+        if (newState) {
+          // Show cards if they match current filters
+          const shouldShow = this.shouldShowCard(card);
+          if (shouldShow) {
+            card.style.display = '';
+            card.classList.remove('hidden');
+          }
+        } else {
+          // Hide all cards in this section
+          card.style.display = 'none';
+          card.classList.add('hidden');
+        }
+      }
+    });
+  }
+  
+  shouldShowCard(card) {
+    const category = card.dataset.category || '';
+    const tags = card.dataset.tags || '';
+    const title = card.querySelector('.menu-card__title')?.textContent.toLowerCase() || '';
+    const description = card.querySelector('.menu-card__description')?.textContent.toLowerCase() || '';
+    
+    // Category check
+    const categoryMatch = this.currentCategory === 'all' || category === this.currentCategory;
+    
+    // Tag check
+    const tagMatch = !this.currentTag || tags.includes(this.currentTag);
+    
+    // Search check
+    const searchMatch = !this.searchTerm || 
+      title.includes(this.searchTerm) || 
+      description.includes(this.searchTerm);
+    
+    return categoryMatch && tagMatch && searchMatch;
   }
   
   bindEvents() {
@@ -69,23 +130,15 @@ class MenuFilter {
     // Count visible cards per category
     this.menuCards.forEach(card => {
       const category = card.dataset.category || '';
-      const tags = card.dataset.tags || '';
-      const title = card.querySelector('.menu-card__title')?.textContent.toLowerCase() || '';
-      const description = card.querySelector('.menu-card__description')?.textContent.toLowerCase() || '';
+      const shouldShow = this.shouldShowCard(card);
       
-      // Category check
-      const categoryMatch = this.currentCategory === 'all' || category === this.currentCategory;
+      // Check if section is expanded
+      const section = Array.from(this.categorySections).find(s => s.dataset.category === category);
+      const button = section?.querySelector('.menu-category-section__title');
+      const isExpanded = button?.getAttribute('aria-expanded') === 'true';
       
-      // Tag check
-      const tagMatch = !this.currentTag || tags.includes(this.currentTag);
-      
-      // Search check
-      const searchMatch = !this.searchTerm || 
-        title.includes(this.searchTerm) || 
-        description.includes(this.searchTerm);
-      
-      // Show/Hide
-      if (categoryMatch && tagMatch && searchMatch) {
+      // Show/Hide based on filters AND section expansion state
+      if (shouldShow && isExpanded) {
         card.style.display = '';
         card.classList.remove('hidden');
         visibleCount++;
